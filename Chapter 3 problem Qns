@@ -8,3 +8,23 @@ if cube_root**3 != cube:
     print ("error")
 else:
     print (f"The cube is {cube} and the cube root is {cube_root}.")
+
+
+
+# Bisection search, cube root (Lecture 3)
+epsilon = 0.01
+cube = 27
+low = 0
+high = cube
+num_guesses = 0
+guess = (high+low)/2
+while abs(guess**3 - cube) >= epsilon:
+    if guess**3 < cube:
+        low = guess
+    else:
+        high = guess
+    guess = (high + low) / 2
+    num_guesses += 1
+print (f"The total number of guesses were {num_guesses}")
+print (f"The number {guess} is close to the cube of {cube}")
+
