@@ -10,8 +10,8 @@ else:
     print (f"The cube is {cube} and the cube root is {cube_root}.")
 
 
-
 # Bisection search, cube root (Lecture 3)
+
 epsilon = 0.01
 cube = 27
 low = 0
